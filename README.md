@@ -1,6 +1,6 @@
 # Angular JS Easy Image Preloader
 
-Inspired heavily by [this] blog post.
+Inspired heavily by [this] blog post. Credit for preloader code goes to Ben Nadel.
 
 ### Step 1: 
 
@@ -27,4 +27,4 @@ Call the preloader.preloadImages function, passing in your array of images:
 
 #### That's it!
 
-[this]: (http://www.bennadel.com/blog/2597-preloading-images-in-angularjs-with-promises.htm)
+[this]: http://www.bennadel.com/blog/2597-preloading-images-in-angularjs-with-promises.htm
