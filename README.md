@@ -5,11 +5,13 @@ Inspired heavily by [this] blog post.
 ### Step 1: 
 
 Include the preloader service in your controller:
+
     app.controller('MyController', function($scope, preloader) {}
 
 ### Step 2:
 
 Pass in an array of images for the preloader:
+
     $scope.imageLocations = [
         "img/one.png",
         "img/two.png",  
@@ -20,6 +22,7 @@ Pass in an array of images for the preloader:
 ### Step 3:
 
 Call the preloader.preloadImages function, passing in your array of images:
+    
     preloader.preloadImages( $scope.imageLocations )
 
 #### That's it!
