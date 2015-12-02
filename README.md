@@ -25,6 +25,15 @@ Call the preloader.preloadImages function, passing in your array of images:
     
     preloader.preloadImages( $scope.imageLocations )
 
+preloader.preloadImages returns a promise, so you could also handle the promise like so:	
+	
+	.then(function() {
+	    // Loading was successful.
+	},
+	function() {
+	    // Loading failed on at least one image.
+	}
+
 #### That's it!
 
 [this]: http://www.bennadel.com/blog/2597-preloading-images-in-angularjs-with-promises.htm
