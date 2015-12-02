@@ -26,7 +26,8 @@ Call the preloader.preloadImages function, passing in your array of images:
     preloader.preloadImages( $scope.imageLocations )
 
 preloader.preloadImages returns a promise, so you could also handle the promise like so:	
-	
+
+	preloader.preloadImages( $scope.imageLocations )
 	.then(function() {
 	    // Loading was successful.
 	},
