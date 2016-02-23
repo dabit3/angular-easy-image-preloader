@@ -1,7 +1,7 @@
 angular
     .module('core')
     .factory(
-            "preloader",
+            'preloader',
             function( $q, $rootScope ) {
                 // I manage the preloading of image objects. Accepts an array of image URLs.
                 function Preloader( imageLocations ) {
@@ -142,7 +142,7 @@ angular
                                     }
                                 );
                             })
-                            .attr('src', imageLocation)
+                            .attr( 'src', imageLocation )
                         ;
                     }
                 };
