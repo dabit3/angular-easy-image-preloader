@@ -113,36 +113,32 @@ angular
                         // we bind the event handlers BEFORE we actually set the image
                         // source. Failure to do so will prevent the events from proper
                         // triggering in some browsers.
-                        var image = $( new Image() )
-                            .load(
-                                function( event ) {
-                                    // Since the load event is asynchronous, we have to
-                                    // tell AngularJS that something changed.
-                                    $rootScope.$apply(
-                                        function() {
-                                            preloader.handleImageLoad( event.target.src );
-                                            // Clean up object reference to help with the
-                                            // garbage collection in the closure.
-                                            preloader = image = event = null;
-                                        }
-                                    );
-                                }
-                            )
-                            .error(
-                                function( event ) {
-                                    // Since the load event is asynchronous, we have to
-                                    // tell AngularJS that something changed.
-                                    $rootScope.$apply(
-                                        function() {
-                                            preloader.handleImageError( event.target.src );
-                                            // Clean up object reference to help with the
-                                            // garbage collection in the closure.
-                                            preloader = image = event = null;
-                                        }
-                                    );
-                                }
-                            )
-                            .prop( "src", imageLocation )
+                        var image = angular.element(new Image())
+                            .bind('load', function( event ) {
+                                // Since the load event is asynchronous, we have to
+                                // tell AngularJS that something changed.
+                                $rootScope.$apply(
+                                    function() {
+                                        preloader.handleImageLoad( event.target.src );
+                                        // Clean up object reference to help with the
+                                        // garbage collection in the closure.
+                                        preloader = image = event = null;
+                                    }
+                                );
+                            })
+                            .bind('error', function( event ) {
+                                // Since the load event is asynchronous, we have to
+                                // tell AngularJS that something changed.
+                                $rootScope.$apply(
+                                    function() {
+                                        preloader.handleImageError( event.target.src );
+                                        // Clean up object reference to help with the
+                                        // garbage collection in the closure.
+                                        preloader = image = event = null;
+                                    }
+                                );
+                            })
+                            .attr('src', imageLocation)
                         ;
                     }
                 };
