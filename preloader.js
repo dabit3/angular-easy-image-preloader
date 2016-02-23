@@ -113,7 +113,11 @@ angular
                         // we bind the event handlers BEFORE we actually set the image
                         // source. Failure to do so will prevent the events from proper
                         // triggering in some browsers.
-                        var image = angular.element(new Image())
+                        // --
+                        // The below removes a dependency on jQuery, based on a comment
+                        // on Ben Nadel's original blog by user Adriaan:
+                        // http://www.bennadel.com/members/11887-adriaan.htm
+                        var image = angular.element( new Image() )
                             .bind('load', function( event ) {
                                 // Since the load event is asynchronous, we have to
                                 // tell AngularJS that something changed.
