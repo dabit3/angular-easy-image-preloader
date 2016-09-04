@@ -33,7 +33,7 @@ preloader.preloadImages returns a promise, so you could also handle the promise 
 	},
 	function() {
 	    // Loading failed on at least one image.
-	}
+	});
 
 #### That's it!
 
