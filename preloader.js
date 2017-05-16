@@ -1,8 +1,8 @@
 angular
-    .module('core')
+    .module('core', [])
     .factory(
             'preloader',
-            function( $q, $rootScope ) {
+            ['$q', '$rootScope', function( $q, $rootScope ) {
                 // I manage the preloading of image objects. Accepts an array of image URLs.
                 function Preloader( imageLocations ) {
                     // I am the image SRC values to preload.
@@ -149,4 +149,4 @@ angular
                 // Return the factory instance.
                 return( Preloader );
             }
-        );
+        ]);
