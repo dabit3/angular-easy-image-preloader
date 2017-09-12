@@ -1,0 +1,25 @@
+{
+  "name": "angular-easy-image-preloader",
+  "version": "1.0.0",
+  "description": "Lib to pre load images",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasPinheiro/angular-easy-image-preloader.git"
+  },
+  "keywords": [
+    "angular",
+    "pre",
+    "load",
+    "image"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglasPinheiro/angular-easy-image-preloader/issues"
+  },
+  "homepage": "https://github.com/douglasPinheiro/angular-easy-image-preloader#readme"
+}
