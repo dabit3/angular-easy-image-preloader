@@ -1,4 +1,4 @@
-angular.module('angular-easy-image-preloader').factory('preloader', ['$q', '$rootScope', function($q, $rootScope) {
+angular.module('angular-easy-image-preloader', []).factory('preloader', ['$q', '$rootScope', function($q, $rootScope) {
     // I manage the preloading of image objects. Accepts an array of image URLs.
     function Preloader( imageLocations ) {
         // I am the image SRC values to preload.
