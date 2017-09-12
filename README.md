@@ -20,13 +20,13 @@ Include the preloader app in your app:
 
     angular.module('example', ['angular-easy-image-preloader']);
 
-### Step 2: 
+### Step 4: 
 
 Include the preloader service in your controller:
 
     app.controller('MyController', function($scope, preloader) {}
 
-### Step 3:
+### Step 5:
 
 Pass in an array of images for the preloader:
 
@@ -37,7 +37,7 @@ Pass in an array of images for the preloader:
         ...               
      ];
 
-### Step 4:
+### Step 6:
 
 Call the preloader.preloadImages function, passing in your array of images:
     
