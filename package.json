@@ -1,0 +1,32 @@
+{
+  "name": "angular-easy-image-preloader",
+  "version": "1.2.0",
+  "description": "Lib to pre load images",
+  "main": "source/preloader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasPinheiro/angular-easy-image-preloader.git"
+  },
+  "keywords": [
+    "angular",
+    "pre",
+    "load",
+    "image"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglasPinheiro/angular-easy-image-preloader/issues"
+  },
+  "homepage": "https://github.com/douglasPinheiro/angular-easy-image-preloader#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bytediff": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

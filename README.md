@@ -4,11 +4,29 @@ Inspired heavily by [this] blog post. Credit for preloader code goes to Ben Nade
 
 ### Step 1: 
 
+Install angular-easy-image-preloader via NPM
+
+    npm install angular-easy-image-preloader --save
+
+### Step 2: 
+
+Load script in your main view
+
+    <script src="node_modules/angular-easy-image-preloader/dist/preloader.min.js"></script>
+
+### Step 3: 
+
+Include the preloader app in your app:
+
+    angular.module('example', ['angular-easy-image-preloader']);
+
+### Step 4: 
+
 Include the preloader service in your controller:
 
     app.controller('MyController', function($scope, preloader) {}
 
-### Step 2:
+### Step 5:
 
 Pass in an array of images for the preloader:
 
@@ -19,7 +37,7 @@ Pass in an array of images for the preloader:
         ...               
      ];
 
-### Step 3:
+### Step 6:
 
 Call the preloader.preloadImages function, passing in your array of images:
     
