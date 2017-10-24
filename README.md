@@ -12,7 +12,7 @@ Install angular-easy-image-preloader via NPM
 
 Load script in your main view
 
-    <script src="node_modules/angular-easy-image-preloader/dist/preloader.js"></script>
+    <script src="node_modules/angular-easy-image-preloader/dist/preloader.min.js"></script>
 
 ### Step 3: 
 
